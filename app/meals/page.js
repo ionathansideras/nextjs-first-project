@@ -5,6 +5,11 @@ import { getMeals } from "@/lib/meals";
 import { Suspense } from "react";
 import Loading from "@/components/meals/Loading";
 
+export const metadata = {
+    title: "Meals Page",
+    description: "Delicious meals, shared by a food-loving community.",
+};
+
 async function Meals() {
     const meals = await getMeals();
     return <MealsGrid meals={meals} />;
