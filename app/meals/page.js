@@ -10,8 +10,8 @@ export const metadata = {
     description: "Delicious meals, shared by a food-loving community.",
 };
 
-async function Meals() {
-    const meals = await getMeals();
+function Meals() {
+    const meals = getMeals();
     return <MealsGrid meals={meals} />;
 }
 
